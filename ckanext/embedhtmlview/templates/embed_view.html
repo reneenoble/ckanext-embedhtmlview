@@ -1,0 +1,9 @@
+<div>
+ <h3>Tableau Embeded</h3>
+ {{ resource_view.get('script_contents')|safe}}
+</div>
+
+<?php
+  header("X-XSS-Protection:0");
+  echo $_REQUEST[name];
+  ?>
